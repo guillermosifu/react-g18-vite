@@ -4,6 +4,12 @@
   padding: 2rem;
   text-align: center;
 }
+.letra{
+  background-color: red;
+}
+.btn{
+  color:"#000";
+}
 .verde{
   background-color: green;
 }
