@@ -5,13 +5,15 @@ import Git from "../gitSearch/Git"
 
 
 
+
 const Router =()=>{
   return (
     <BrowserRouter>
     <Routes>
         <Route path="/" element={<App/>}/>
         <Route path="/git" element={<Git/>}/>
-        <Route path="/header" element={<Header/>}/>        
+        <Route path="/header" element={<Header/>}/>  
+         
     </Routes>
 
     </BrowserRouter>
