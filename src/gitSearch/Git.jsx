@@ -7,7 +7,7 @@ const Git=()=>{
 
     const [search,setSearch]= useState("");
     const[user,setUser]=useState({}); 
-    
+
     //funcion fetch
     const fecthUser = async()=>{
      try{    const response = await fetch (`https://api.github.com/users/${search}`)
@@ -22,6 +22,7 @@ const Git=()=>{
         <div className="App">
             <div className="container" >
                 <h1>Buscador Github</h1>
+                <a href="../../App.jsx">inicio</a>
                 <div className="grid">
                     <input type="text" placeholder="ingresa usuarios"onChange={(e)=>setSearch(e.target.value)} />
                 </div>
