@@ -7,11 +7,7 @@ const Header =()=>{
 const[nombre,setNombre] =useState("guillermo");
 
 const cambiarNombre=(nuevo)=>{
-     setNombre(nuevo)   
-}
-
-
-
+     setNombre(nuevo)   }
 
     return(
         <div>
