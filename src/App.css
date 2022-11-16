@@ -52,3 +52,17 @@
 .read-the-docs {
   color: #888;
 }
+
+.img-pokemon{
+  min-height: 250px;
+  max-height: 250px;
+  object-fit: contain !important;
+  margin-top: 25px;
+}
+
+.card-pokemon {
+  max-width: 300px;
+  min-height: 400px;
+  max-height: 400px;
+  
+}
