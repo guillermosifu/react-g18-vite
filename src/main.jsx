@@ -4,7 +4,7 @@ import Git from './gitSearch/Git'
 import App from './App'
 import Router from './router/Router'
 import Footer from './Footer'
-import './index.css'
+
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
