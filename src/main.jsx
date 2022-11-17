@@ -8,7 +8,6 @@ import Footer from './Footer'
 
 ReactDOM.createRoot(document.getElementById('root')).render(
   <React.StrictMode>
-  <Router/>
-  <Footer/>
+  <Router/>  
   </React.StrictMode>
 )

@@ -4,7 +4,7 @@ import Header from "../Header"
 import Git from "../gitSearch/Git"
 import Home from "../pages/pokemon"
 import Flags from "../pages/Flags"
-
+import PrincipalImg from "../imagenes-pixabay/Components/PrincipalImg"
 
 
 
@@ -18,6 +18,7 @@ const Router =()=>{
         <Route path="/banderas" element={<Flags/>}/>
         <Route path="/git" element={<Git/>}/>
         <Route path="/header" element={<Header/>}/>  
+        <Route path="/imagen" element={<PrincipalImg/>}/>  
          
     </Routes>
 
