@@ -1,7 +1,7 @@
 import {getApi} from '../helpers/consumoApi';
-import {ImgItems} from '../Components/ImgItems';
+import {ImgItems} from './ImgItems';
 import { useState,useEffect } from 'react';
-import InputImg from './InputImg';
+
 
 export const PintadoImg =({valor})=>{
  const[infoApi,setInfoApi]= useState([])
@@ -14,7 +14,7 @@ export const PintadoImg =({valor})=>{
         <div>
             {
                 infoApi.map((img)=>{
-                    return <InputImg/>
+                    return <ImgItems/>
                 })
             }
         </div>

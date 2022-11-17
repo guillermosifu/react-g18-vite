@@ -1,4 +1,4 @@
-import {InputImg} from './InputImg'
+import InputImg from './InputImg'
 
  const PrincipalImg=()=>{
     return(

@@ -1,4 +1,5 @@
 import{useState} from "react"
+import { PintadoImg } from "./PintadoImg"
  
  
  const InputImg =()=>{
@@ -15,6 +16,8 @@ import{useState} from "react"
                 <input type="text" />
                 <button onClick={captura}>BUSCAR</button>
             </form>
+        <PintadoImg/>
+
         </div>
 
     )
