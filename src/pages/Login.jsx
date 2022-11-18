@@ -1,40 +1,66 @@
-import React from "react";
 import { Grid, TextField, Card, CardContent, Button } from "@mui/material";
-import '../App.css'
+import { UserContext } from "../Context/UserContext";
+import { useContext} from "react";
+import "../App.css";
+
 function Login() {
+  
+  const {user}=useContext(UserContext);
+
+ 
   return (
-    <Grid className="login" container alignItems="center" justifyContent="space-around">
+    <Grid
+      className="login"
+      container
+      alignItems="center"
+      justifyContent="space-around"
+    >
       <Grid item md={6}>
+
+
         <img
           src="https://codigo.edu.pe/public/img/ban-main.png"
           width={800}
           alt=""
         />
       </Grid>
-      <Grid>
-        <Card>
-          <CardContent className="content">
-            <h5>Bienvenidos</h5>
-            <p>a la comunidad del grupo G18</p>
-            <Grid container spacing={3} m={1}>
-              <TextField label="Email" name="email" />
-            </Grid>
-            <Grid item md={12} mt={5}>
-              <TextField
-                label="password"
-                fullWidth
-                name="password"
-                type="password"
-              />
-            </Grid>
-            <Grid item md={12} mt={5}>
-              <Button variant="contained" sx={{backGroundColor:"#000"}} fullWidth size="large">
-                Inicia Sesion
-              </Button>
-            </Grid>
-          </CardContent>
-        </Card>
-      </Grid>
+      <Grid item md={6}>
+            <Card>
+                <CardContent>
+                    <h5>Bienvenidos a tecsup</h5>
+                    <p>Bienvenido a la comunidad del grupo 18</p>
+                    <Grid container sapacing ={3} mt={5}>
+                        <TextField
+                        label="Email"
+                        fullWidth
+                        name="email"
+                     
+                        />
+                    </Grid>
+                    <Grid item md={12} mt={5}>
+                        <TextField
+                        label="Password"
+                        fullWidth
+                        name="password"
+                        type="password"
+                    
+                        />
+                    </Grid>
+                    <Grid item md={12} mt={3}>
+                        <Button
+                        sx={{backGroundColor: "#000"}}
+                        variant="contained"
+                        fullWidth
+                        size="large"
+                      
+                       >
+                            Inicia Sesion
+                        </Button>
+                      </Grid>
+                </CardContent>
+            </Card>
+        </Grid>
+      
     </Grid>
   );
 }
