@@ -6,7 +6,7 @@ import Git from "../gitSearch/Git"
 import Home from "../pages/pokemon"
 import Flags from "../pages/Flags"
 import PrincipalImg from "../imagenes-pixabay/Components/PrincipalImg"
-import {UserProvider} from './Context/UserContext'
+
 import Login from "../pages/Login"
 
 
@@ -15,7 +15,7 @@ import Login from "../pages/Login"
 const Router =()=>{
   return (
 
-    <UserProvider>
+    
     <BrowserRouter>
     <Headerr/>
     <Routes>  
@@ -31,7 +31,7 @@ const Router =()=>{
     </Routes>
 
     </BrowserRouter>
-    </UserProvider>
+
 
   )
 }

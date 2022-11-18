@@ -5,7 +5,7 @@ import "../App.css";
 
 function Login() {
   
-  const {user}=useContext(UserContext);
+  const {user,setUser}=useContext(UserContext);
 
  
   return (
@@ -17,7 +17,8 @@ function Login() {
     >
       <Grid item md={6}>
 
-
+        
+         
         <img
           src="https://codigo.edu.pe/public/img/ban-main.png"
           width={800}
@@ -29,6 +30,8 @@ function Login() {
                 <CardContent>
                     <h5>Bienvenidos a tecsup</h5>
                     <p>Bienvenido a la comunidad del grupo 18</p>
+                    <h4>{user.name}</h4>
+                    <h5>{user.last_name}</h5>
                     <Grid container sapacing ={3} mt={5}>
                         <TextField
                         label="Email"
