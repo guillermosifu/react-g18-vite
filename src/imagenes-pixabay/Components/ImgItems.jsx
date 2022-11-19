@@ -1,6 +1,6 @@
 import'./img.css'
-export const ImgItems =({largeImageURL})=>{
+export const ImgItems =({previewURL})=>{
     return(
-        <img src={largeImageURL} alt="" />
+        <img src={previewURL} alt="" />
     )
 }

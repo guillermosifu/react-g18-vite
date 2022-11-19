@@ -2,6 +2,10 @@ import { useEffect, useState } from "react";
 import { getDataFromPokemon } from "../Services";
 import { Container, Card, CardContent, CardMedia, Grid } from "@mui/material";
 import'../App.css'
+import PokemonDetail from "../Components/PokemonDetail";
+
+
+
 const Home = () => {
   const imgUrl =
     "https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/dream-world/";
@@ -43,6 +47,7 @@ const Home = () => {
           />
           <CardContent>
             <h3>{lista.name}</h3>
+          <PokemonDetail/>
           </CardContent>
         </Card>
       </Grid>

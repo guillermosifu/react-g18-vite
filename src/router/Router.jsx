@@ -20,12 +20,12 @@ const Router =()=>{
     <Headerr/>
     <Routes>  
         <Route path= "/" element ={<Login/>} />
-       
+         <Route path="/pokemon" element={<Home/>}/>
 
         {/* rutas privates */}
         <Route element={<Private/>}>
              <Route path="/git" element={<Git/>}/>
-   <Route path="/pokemon" element={<Home/>}/>
+ 
         <Route path="/banderas" element={<Flags/>}/>
   
         <Route path="/header" element={<Header/>}/>  
