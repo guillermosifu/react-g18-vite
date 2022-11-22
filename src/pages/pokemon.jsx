@@ -35,7 +35,7 @@ const Home = () => {
     <Container>
       <h1>Pokdex</h1>
       <Grid container spacing ={3}>
-        {pokemons.map((lista,index)=>(
+        {pokemons.map((pokemon,index)=>(
            //aca el codigo visual
       <Grid item xs={12} md={4} lg={4} sm={12}>
         <Card className="card-pokemon">
@@ -46,7 +46,7 @@ const Home = () => {
             image={`${imgUrl}${index + 1}.svg`}
           />
           <CardContent>
-            <h3>{lista.name}</h3>
+            <h3>{pokemon.name}</h3>
           <PokemonDetail/>
           </CardContent>
         </Card>
