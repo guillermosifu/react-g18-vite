@@ -47,7 +47,11 @@ const Home = () => {
           />
           <CardContent>
             <h3>{pokemon.name}</h3>
-          <PokemonDetail/>
+
+      {/* //esto es otro component */}
+          <PokemonDetail apodo={pokemon.name} url={pokemon.url}/>
+
+
           </CardContent>
         </Card>
       </Grid>
