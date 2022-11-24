@@ -13,6 +13,7 @@ import {
   Select,
   MenuItem,CircularProgress
 } from "@mui/material";
+import {Link} from 'react-router-dom'
 
 function Flags() {
   const [countries, setCountries] = useState([]);
@@ -87,7 +88,8 @@ function Flags() {
             </Grid>
             {countries.length > 0 ? (
           countries.map((country) => (
-            <Grid item md={3} xs={12}>             
+            <Grid item md={3} xs={12}> 
+            <Link to={`/banderas/detail/${country.name.common}`}>          
                 <Card>
                   <CardMedia
                     component="img"
@@ -101,7 +103,7 @@ function Flags() {
                     <p>Capital: {country.capital}</p>
                   </CardContent>
                 </Card>
-              
+              </Link> 
             </Grid>
           ))
         ) : (
